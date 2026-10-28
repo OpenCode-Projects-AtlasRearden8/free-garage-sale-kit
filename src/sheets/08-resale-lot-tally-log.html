@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Resale-Lot Tally Log</title>
+<link rel="stylesheet" href="../styles/common.css">
+<style>
+  table.tally td, table.tally th {
+    font-size: 9pt;
+    padding: 1.2mm 1.6mm;
+  }
+  table.tally td.num { text-align: center; }
+  table.summary td { height: 9mm; }
+</style>
+</head>
+<body>
+
+<div class="sheet-head">
+  <div class="kicker">Garage Sale Pack &middot; Sheet 8 of 8</div>
+  <h1>Resale-Lot Tally Log</h1>
+</div>
+<p class="hint">One line per item (or per lot). Print several copies and lay the top one flat at the
+payment table. When the sale's over, <strong>fold along this line</strong> and the completed rows
+slide straight into resale-lot-style records &mdash; the same Lot #, Table, and price columns your
+online listing spreadsheet expects.</p>
+
+<div class="avoid-break" style="border-top: 1pt dashed var(--accent); padding-top: 0">
+  <table class="ruled tally">
+    <thead>
+    <tr>
+      <th style="width:9%">Lot #</th>
+      <th style="width:7%">Table</th>
+      <th>What sold (batch items at one price into one lot)</th>
+      <th style="width:11%">Asked</th>
+      <th style="width:11%">Sold for</th>
+      <th style="width:10%">Paid by</th>
+      <th style="width:14%">Notes / fees</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr style="height:8mm"><td class="num"></td><td class="num"></td><td></td><td class="num">$&nbsp;</td><td class="num">$&nbsp;</td><td class="num"></td><td></td></tr>
+    <tr style="height:8mm"><td class="num"></td><td class="num"></td><td></td><td class="num">$&nbsp;</td><td class="num">$&nbsp;</td><td class="num"></td><td></td></tr>
+    <tr style="height:8mm"><td class="num"></td><td class="num"></td><td></td><td class="num">$&nbsp;</td><td class="num">$&nbsp;</td><td class="num"></td><td></td></tr>
+    <tr style="height:8mm"><td class="num"></td><td class="num"></td><td></td><td class="num">$&nbsp;</td><td class="num">$&nbsp;</td><td class="num"></td><td></td></tr>
+    <tr style="height:8mm"><td class="num"></td><td class="num"></td><td></td><td class="num">$&nbsp;</td><td class="num">$&nbsp;</td><td class="num"></td><td></td></tr>
+    <tr style="height:8mm"><td class="num"></td><td class="num"></td><td></td><td class="num">$&nbsp;</td><td class="num">$&nbsp;</td><td class="num"></td><td></td></tr>
+    <tr style="height:8mm"><td class="num"></td><td class="num"></td><td></td><td class="num">$&nbsp;</td><td class="num">$&nbsp;</td><td class="num"></td><td></td></tr>
+    <tr style="height:8mm"><td class="num"></td><td class="num"></td><td></td><td class="num">$&nbsp;</td><td class="num">$&nbsp;</td><td class="num"></td><td></td></tr>
+    <tr style="height:8mm"><td class="num"></td><td class="num"></td><td></td><td class="num">$&nbsp;</td><td class="num">$&nbsp;</td><td class="num"></td><td></td></tr>
+    <tr style="height:8mm"><td class="num"></td><td class="num"></td><td></td><td class="num">$&nbsp;</td><td class="num">$&nbsp;</td><td class="num"></td><td></td></tr>
+    <tr style="height:8mm"><td class="num"></td><td class="num"></td><td></td><td class="num">$&nbsp;</td><td class="num">$&nbsp;</td><td class="num"></td><td></td></tr>
+    <tr style="height:8mm"><td class="num"></td><td class="num"></td><td></td><td class="num">$&nbsp;</td><td class="num">$&nbsp;</td><td class="num"></td><td></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="avoid-break">
+  <table class="ruled summary" style="width:88%">
+    <tbody>
+    <tr><td style="width:56%">Total asked (sum of all lines)</td><td>$&nbsp;<span class="fill" style="min-width:20mm"></span></td></tr>
+    <tr><td>Total taken in (sum of "Sold for")</td><td>$&nbsp;<span class="fill" style="min-width:20mm"></span></td></tr>
+    <tr><td>Free / donated away Lot #s</td><td><span class="fill" style="min-width:40mm"></span></td></tr>
+    <tr><td>Best, worst, and surprise tables</td><td><span class="fill" style="min-width:40mm"></span></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="avoid-break" style="page-break-before: always">
+  <h2>Simple ways to use Lot #</h2>
+  <ul class="checklist">
+    <li><span class="check"></span> <strong>Quick way (no math):</strong> count up from 1 as things sell &mdash; "1, 2, 3&hellip;" &mdash; and erase the count when the day's done</li>
+    <li><span class="check"></span> <strong>Resaler way:</strong> Lot # = <strong>sale date + table letter + row</strong> &mdash; e.g. <span class="fill" style="min-width:78mm">0-5-1-2-8 / K / 3</span> means Oct&nbsp;5, Kitchen table, third row</li>
+    <li><span class="check"></span> <strong>Batch way:</strong> group $1 items into one lot (Lot&nbsp;#0-5-1-2-8/B&nbsp;/&nbsp;24 pieces) instead of one line per item</li>
+  </ul>
+
+  <h2>Folding it into resale-lot records</h2>
+  <p class="hint">The log was drawn at exactly the same column rhythm as a resale lot sheet
+  (one item, one line, price, source, notes), so the rows themselves become lot records:</p>
+  <table class="ruled tally">
+    <thead>
+    <tr>
+      <th style="width:14%">Tally column</th>
+      <th style="width:42%">Maps directly to</th>
+      <th>Typical resale-lot record field</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr><td>Lot #</td><td>Lot record ID &mdash; date + table + row</td><td>Same ID goes on the listing, the storage tote, and the spreadsheet row</td></tr>
+    <tr><td>Table</td><td>Source of the item</td><td>&ldquo;Source&rdquo; or &ldquo;Pick&rdquo; field (garage, KS/Marketplace, donation)</td></tr>
+    <tr><td>What sold</td><td>Item title for the listing</td><td>First draft of your listing title &mdash; write it plainly</td></tr>
+    <tr><td>Asked</td><td>List price suggestion vs. what sold</td><td>&ldquo;Cost basis / list plan&rdquo; &mdash; teaches you pricing year over year</td></tr>
+    <tr><td>Sold for</td><td>Sale amount</td><td>&ldquo;Sold price&rdquo; line in your sales spreadsheet</td></tr>
+    <tr><td>Notes / fees</td><td>Bagging, breakage, partial-returns junk fees</td><td>&ldquo;Fees / adjustments&rdquo; line</td></tr>
+    </tbody>
+  </table>
+  <p class="hint">Next time you log lots for online resale, key the well-written rows straight through,
+  then cross-check the <strong>Total taken in</strong> box against the change-fund worksheet
+  (Sheet 4). Everything stays local, on paper, under your control.</p>
+</div>
+
+<div class="page-footer">Free Garage Sale Pack &middot; local, unbranded, print at 100% &middot; Sheet 8</div>
+</body>
+</html>

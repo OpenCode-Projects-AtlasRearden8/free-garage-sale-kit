@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pricing Cards</title>
+<link rel="stylesheet" href="../styles/common.css">
+<style>
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3mm;
+  }
+  .pricecard {
+    height: 34mm;
+    padding: 2.5mm;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pricecard .amount {
+    font-size: 26pt;
+    font-weight: bold;
+    line-height: 1.05;
+  }
+  .pricecard .amount sup {
+    font-size: 12pt;
+  }
+  .pricecard .tier-name {
+    font-size: 8pt;
+    color: var(--soft);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 1mm;
+  }
+  .pricecard .tier-note {
+    font-size: 7.5pt;
+    color: var(--soft);
+    margin-top: 1mm;
+  }
+  .pricecard.offer .amount { font-size: 16pt; line-height: 1.25; }
+  .pricecard.special { background: var(--accent-soft); }
+</style>
+</head>
+<body>
+
+<div class="sheet-head">
+  <div class="kicker">Garage Sale Pack &middot; Sheet 2 of 8</div>
+  <h1>Pricing Cards &mdash; Default Tiers</h1>
+</div>
+<p class="hint">Print at 100%, cut on the dashed lines, and tape or stick onto your items.
+These are the <strong>sensible default tiers</strong> used for resale-styled pricing:
+rough marketplace prices for decent-condition household goods.</p>
+
+<div class="avoid-break">
+<h2>Tier A &mdash; everyday $1 items</h2>
+<div class="card-grid">
+  <div class="cutout pricecard"><div class="amount">$1</div><div class="tier-name">Tier A</div><div class="tier-note">mugs, books, small tools</div></div>
+  <div class="cutout pricecard"><div class="amount">$1</div><div class="tier-name">Tier A</div><div class="tier-note">books, mugs, small tools</div></div>
+  <div class="cutout pricecard"><div class="amount">$1</div><div class="tier-name">Tier A</div><div class="tier-note">books, mugs, small tools</div></div>
+  <div class="cutout pricecard"><div class="amount">$1</div><div class="tier-name">Tier A</div><div class="tier-note">books, mugs, small tools</div></div>
+</div>
+</div>
+
+<div class="avoid-break">
+<h2>Tier B &mdash; $2 and $3 items</h2>
+<div class="card-grid">
+  <div class="cutout pricecard"><div class="amount">$2</div><div class="tier-name">Tier B</div><div class="tier-note">games, kitchenware, tees</div></div>
+  <div class="cutout pricecard"><div class="amount">$2</div><div class="tier-name">Tier B</div><div class="tier-note">games, kitchenware, tees</div></div>
+  <div class="cutout pricecard"><div class="amount">$3</div><div class="tier-name">Tier B</div><div class="tier-note">nice toys, frames, decor</div></div>
+  <div class="cutout pricecard"><div class="amount">$3</div><div class="tier-name">Tier B</div><div class="tier-note">nice toys, frames, decor</div></div>
+</div>
+</div>
+
+<div class="avoid-break">
+<h2>Tier C &mdash; $5, $10, and $15 items</h2>
+<div class="card-grid">
+  <div class="cutout pricecard"><div class="amount">$5</div><div class="tier-name">Tier C</div><div class="tier-note">board games, lamps, jeans</div></div>
+  <div class="cutout pricecard"><div class="amount">$10</div><div class="tier-name">Tier C</div><div class="tier-note">small appliances, sets</div></div>
+  <div class="cutout pricecard"><div class="amount">$10</div><div class="tier-name">Tier C</div><div class="tier-note">small appliances, sets</div></div>
+  <div class="cutout pricecard"><div class="amount">$15</div><div class="tier-name">Tier C</div><div class="tier-note">boxed sets, big toys</div></div>
+</div>
+</div>
+
+<div class="avoid-break">
+<h2>Special cards</h2>
+<div class="card-grid">
+  <div class="cutout pricecard"><div class="amount">FREE</div><div class="tier-note">yes, really free</div></div>
+  <div class="cutout pricecard"><div class="amount">$1&nbsp;/&nbsp;2</div><div class="tier-note">for pants, shirts, towels</div></div>
+  <div class="cutout pricecard"><div class="amount">$2&nbsp;/&nbsp;3</div><div class="tier-note">for jeans, jackets</div></div>
+  <div class="cutout pricecard offer"><div class="amount">MAKE AN OFFER</div><div class="tier-note">no price yet &mdash; talk to me</div></div>
+</div>
+</div>
+
+<div class="avoid-break">
+<h2>Half-off day card</h2>
+<div class="card-grid">
+  <div class="cutout pricecard special"><div class="amount">&frac12; OFF</div><div class="tier-name">Last 2 hours</div><div class="tier-note">everything this color</div></div>
+  <div class="cutout pricecard special"><div class="amount">&frac12; OFF</div><div class="tier-name">Last 2 hours</div><div class="tier-note">everything this color</div></div>
+  <div class="cutout pricecard special"><div class="amount">&frac12; OFF</div><div class="tier-name">Last 2 hours</div><div class="tier-note">everything this color</div></div>
+  <div class="cutout pricecard special"><div class="amount">&frac12; OFF</div><div class="tier-name">Last 2 hours</div><div class="tier-note">everything this color</div></div>
+</div>
+<p class="hint" style="margin-top:2.5mm">Tip: tape the half-off card next to every full-price card in the
+last two hours instead of re-tagging thousands of items.</p>
+</div>
+
+<div class="page-footer">Free Garage Sale Pack &middot; local, unbranded, print at 100% &middot; Sheet 2</div>
+</body>
+</html>

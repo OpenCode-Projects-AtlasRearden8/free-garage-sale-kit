@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Host Guide &mdash; Free Garage Sale Pack</title>
+<link rel="stylesheet" href="styles/common.css">
+<style>
+  .tips th, .tips td { font-size: 9.5pt; }
+  .quote {
+    background: var(--accent-soft);
+    border-left: 3pt solid var(--accent);
+    padding: 3mm 5mm;
+    border-radius: 0 2mm 2mm 0;
+    margin: 0 0 4mm 0;
+  }
+  .quote p { margin: 0; font-style: italic; }
+</style>
+</head>
+<body>
+
+<div class="sheet-head">
+  <div class="kicker">Garage Sale Pack &middot; Read me first</div>
+  <h1>Host Guide &mdash; a friend to help you run your sale</h1>
+</div>
+
+<p class="hint">Everything in this pack is a plain piece of paper: print it, fill it in, tape it,
+cross it out, spill coffee on it. Nothing here connects to anything. The PDFs are unbranded
+&mdash; no logos, no links, no credit lines &mdash; so slide them right into whatever else you use.</p>
+
+<div class="quote">
+  <p>&ldquo;A garage sale is really two events: you quietly unclutter your house for a few weeks,
+  then a couple of hours where strangers figure out the pricing for you.&rdquo; &mdash; your friendly neighbor, the pack</p>
+</div>
+
+<h2>What's in the pack</h2>
+<table class="ruled tips">
+  <thead>
+    <tr><th style="width:34%">PDF</th><th style="width:18%">How many copies</th><th>What it's for</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>01-pick-a-date-checklist.pdf</strong></td><td>1</td><td>Choosing a date plus a three-week plan so you never panic-pricing the night before.</td></tr>
+    <tr><td><strong>02-pricing-cards.pdf</strong></td><td>2</td><td>Cut-out price cards in the default tiers ($1&ndash;$15, per-item and by-the-bag) so tagging stays simple.</td></tr>
+    <tr><td><strong>03-table-sort-labels.pdf</strong></td><td>1&ndash;2</td><td>Fold-over table labels &mdash; buyers sort themselves, so you sell instead of chat.</td></tr>
+    <tr><td><strong>04-change-fund-worksheet.pdf</strong></td><td>1</td><td>Count a $60 starting fund (or whatever suits you) and settle the box at close.</td></tr>
+    <tr><td><strong>05-layout-sketch-grid.pdf</strong></td><td>1</td><td>1&nbsp;&times;&nbsp;1&nbsp;foot grid to pencil in table placement, cash box, door path, big items.</td></tr>
+    <tr><td><strong>06-sale-day-signs.pdf</strong></td><td>2&ndash;3</td><td>The main sale sign, direction arrows, and last-two-hours half-off boards in big readable letters.</td></tr>
+    <tr><td><strong>07-no-sold-today-fine.pdf</strong></td><td>1</td><td>A friendly fine ticket for the printer that never sold it (Use A) and a quiet-table postmortem (Use B).</td></tr>
+    <tr><td><strong>08-resale-lot-tally-log.pdf</strong></td><td>3&ndash;6</td><td>One venue for the whole day &mdash; then fold the rows into resale-lot-style records for online resale.</td></tr>
+  </tbody>
+</table>
+
+<h2>How to print the pack</h2>
+<ul class="checklist">
+  <li><span class="check"></span> PDFs are US Letter at 100% / <strong>&ldquo;Actual size&rdquo;</strong> &mdash; don't let the printer scale them down.</li>
+  <li><span class="check"></span> Signs (06) and labels (03) look best on a heavier stock; the rest is fine on normal paper.</li>
+  <li><span class="check"></span> The cards and labels are grid-aligned, so scissors or a paper trimmer both work well &mdash; the cuts are dashed, and eyes forgive a lot.</li>
+</ul>
+
+<h2>Rebuilding it if you ever want to</h2>
+<p class="hint">The HTML/CSS sources are in <strong>src/</strong>, and one script regenerates the
+whole <strong>printables/</strong> folder:</p>
+<pre style="background:var(--paper-tint); padding:3mm 5mm; border-radius:2mm; font-size:9pt; border:1pt solid var(--line)">  python3 build.py          # builds all PDFs into printables/ (fully offline)
+  python3 build.py --list   # show the sheet list
+  pytest                    # verifies every sheet builds</pre>
+<p class="hint">No internet connection, no accounts, no model calls, no cloud. The tests spin up the
+same local builder and validate every finished PDF.</p>
+
+<h2>Sale-day rhythm that tends to work</h2>
+<ul class="checklist">
+  <li><span class="check"></span> Doors open early; the haulers arrive 7&nbsp;a.m. with coffee and opinions.</li>
+  <li><span class="check"></span> Tally everything on Sheet 8 as it happens &mdash; the price is on the card, the money is in the box.</li>
+  <li><span class="check"></span> Half off at noon; silent generosity collects smiles faster than perfect pricing collects dollars.</li>
+  <li><span class="check"></span> Take a two-minute layout photo before open; it will help set up next year's tables.</li>
+</ul>
+
+<div class="page-footer">Free Garage Sale Pack &middot; local, unbranded, print at 100% &middot; Host guide</div>
+</body>
+</html>

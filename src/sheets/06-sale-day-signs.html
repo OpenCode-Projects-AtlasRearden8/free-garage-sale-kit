@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sale-Day Signs</title>
+<link rel="stylesheet" href="../styles/common.css">
+<style>
+  .sign {
+    height: 118mm;
+    border: 2.5pt solid var(--ink);
+    border-radius: 3mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6mm;
+  }
+  .sign-hero .word {
+    font-size: 64pt;
+    font-weight: bold;
+    line-height: 0.95;
+    letter-spacing: 3px;
+  }
+  .sign-hero .word + .word { margin-top: -2mm; }
+  .sign-hero .detail {
+    font-size: 17pt;
+    font-weight: bold;
+    margin-top: 5mm;
+    line-height: 1.5;
+  }
+  .sign-hero .detail .fill {
+    border-bottom-width: 1pt;
+    min-width: 45mm;
+  }
+  .arrow-sign {
+    height: 60mm;
+    border: 2.5pt solid var(--ink);
+    border-radius: 3mm;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10mm;
+  }
+  .arrow-sign .glow {
+    font-size: 44pt;
+    font-weight: bold;
+  }
+  .arrow-sign .go {
+    font-size: 26pt;
+    font-weight: bold;
+  }
+  .arrow-sign .blank {
+    flex: 1;
+    text-align: center;
+    font-size: 15pt;
+    color: var(--accent);
+    border: 0.8pt dashed var(--line);
+    border-radius: 2mm;
+    margin-left: 8mm;
+    padding: 3mm;
+  }
+  .bigword {
+    height: 84mm;
+    border: 2.5pt solid var(--ink);
+    border-radius: 3mm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 56pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  .bigword .greedy { font-size: 33pt; letter-spacing: 8px; }
+</style>
+</head>
+<body>
+
+<div class="sheet-head">
+  <div class="kicker">Garage Sale Pack &middot; Sheet 6 of 8 &mdash; page 1 of 2</div>
+  <h1>Sale-Day Main Sign</h1>
+</div>
+<p class="hint">Fill in the blanks with a fat marker before the sale. The three things buyers need
+at 30&nbsp;mph: <strong>what, when, where</strong>. Print at 100% and write big.</p>
+
+<div class="sign sign-hero avoid-break">
+  <div class="word"><span style="color:var(--accent)">GARAGE</span></div>
+  <div class="word">SALE</div>
+  <div class="detail">
+    SATURDAY <span class="fill" style="min-width:36mm"></span> &nbsp;&middot;&nbsp; <span class="fill" style="min-width:24mm"></span> a.m. &ndash; <span class="fill" style="min-width:24mm"></span> p.m.<br>
+    <span class="fill" style="min-width:120mm"></span><br>
+    <span style="font-size:13pt">turn here &darr; from <span class="fill" style="min-width:55mm"></span></span>
+  </div>
+</div>
+
+<div class="avoid-break" style="page-break-before: always">
+  <div class="sheet-head">
+    <div class="kicker">Garage Sale Pack &middot; Sheet 6 of 8 &mdash; page 2 of 2</div>
+    <h1>Direction Signs &amp; Sale-Day Extras</h1>
+  </div>
+  <p class="hint">Staple or tape to yard-stick poles; angle them so drivers read them at eye level.
+  Write the rest of the street name in the dashed box.</p>
+
+  <div class="arrow-sign avoid-break">
+    <span class="glow">SALE &rarr;</span>
+    <span class="blank">on <span class="fill" style="min-width:42mm"></span></span>
+    <span class="go">&rarr;</span>
+  </div>
+
+  <div class="arrow-sign avoid-break" style="margin-top:4mm">
+    <span class="glow">SALE &larr;</span>
+    <span class="blank">on <span class="fill" style="min-width:42mm"></span></span>
+    <span class="go">&larr;</span>
+  </div>
+
+  <p class="hint" style="margin-top:5mm">For buy-one-get-one deals, clearance hours, or anything
+  else worth slowing down for, tape a standard sheet of paper beside the direction sign with the
+  message big enough to read from the car:</p>
+
+  <div class="bigword avoid-break" style="margin-top:4mm">
+    <span class="greedy">&frac12; OFF &nbsp;LAST 2 HOURS</span>
+  </div>
+
+  <div class="bigword avoid-break" style="margin-top:4mm">
+    <span class="greedy">EVERYTHING MUST GO</span>
+  </div>
+</div>
+
+<div class="page-footer">Free Garage Sale Pack &middot; local, unbranded, print at 100% &middot; Sheet 6</div>
+</body>
+</html>

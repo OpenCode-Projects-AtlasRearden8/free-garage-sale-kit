@@ -1,0 +1,164 @@
+/* Shared print styles for the Free Garage Sale Pack.
+   Everything targets US Letter paper, printed at 100% / "Actual size".
+   No web fonts, no external assets: the build works fully offline. */
+
+:root {
+  --ink: #16181d;
+  --soft: #5a616e;
+  --line: #9aa2ad;
+  --accent: #1d5c8f;
+  --accent-soft: #eaf2f9;
+  --paper-tint: #f7f8fa;
+}
+
+@page {
+  size: Letter;
+  margin: 14mm 14mm 13mm 14mm;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "DejaVu Sans", "Liberation Sans", Arial, sans-serif;
+  color: var(--ink);
+}
+
+body {
+  margin: 0;
+  font-size: 10.5pt;
+  line-height: 1.35;
+}
+
+h1 {
+  font-size: 17pt;
+  margin: 0 0 2mm 0;
+  letter-spacing: 0.3px;
+}
+
+h2 {
+  font-size: 12pt;
+  margin: 4mm 0 2mm 0;
+  color: var(--accent);
+}
+
+p.hint,
+.hint {
+  color: var(--soft);
+  font-size: 9pt;
+  margin: 0 0 3mm 0;
+}
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: var(--soft);
+  font-size: 8pt;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+/* Filled-in answers / hand-writing space ------------------------------- */
+.fill {
+  border-bottom: 0.5pt solid var(--line);
+  display: inline-block;
+  min-width: 30mm;
+}
+
+.big-fill {
+  display: inline-block;
+  border-bottom: 0.8pt solid var(--line);
+  min-width: 42mm;
+  height: 7mm;
+}
+
+/* Simple ruled checkboxes ---------------------------------------------- */
+.check {
+  display: inline-block;
+  width: 4.2mm;
+  height: 4.2mm;
+  border: 1pt solid var(--ink);
+  border-radius: 1mm;
+  margin-right: 2.2mm;
+  vertical-align: -0.6mm;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist li {
+  margin: 0 0 1.8mm 0;
+  padding-left: 0;
+}
+
+/* Generic ruled table ---------------------------------------------------- */
+table.ruled {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10pt;
+}
+
+table.ruled th,
+table.ruled td {
+  border: 0.6pt solid var(--line);
+  padding: 1.6mm 2mm;
+  text-align: left;
+  vertical-align: top;
+}
+
+table.ruled th {
+  background: var(--accent-soft);
+  color: var(--ink);
+  font-size: 9.5pt;
+}
+
+table.ruled td.ruled-dark {
+  border-color: var(--line);
+}
+
+/* Cut-out cards and labels ---------------------------------------------- */
+.cutout {
+  border: 0.6pt dashed var(--line);
+  border-radius: 2mm;
+  page-break-inside: avoid;
+}
+
+/* Page-level helpers ----------------------------------------------------- */
+.sheet-head {
+  border-bottom: 1.2pt solid var(--accent);
+  padding-bottom: 2mm;
+  margin-bottom: 3mm;
+}
+
+.sheet-head .kicker {
+  color: var(--accent);
+  font-size: 8.5pt;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+}
+
+.sheet-head h1 {
+  margin: 0.8mm 0 0 0;
+}
+
+.two-col {
+  column-count: 2;
+  column-gap: 8mm;
+}
+
+.avoid-break {
+  page-break-inside: avoid;
+}
